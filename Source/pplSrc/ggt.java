@@ -1,0 +1,65 @@
+package ppl;
+
+import ppl.Executable;
+
+public class ggt extends Executable {
+    public ggt() {
+        super(new Instr []
+              { loadi(1233423)
+              , loadi(9)              
+              , store(absAddr,1)
+              , store(absAddr,0)
+              , loads("ggt(")
+              , load(absAddr,0)
+              , compute(i2s)
+              , compute(concs)
+              , loads(",")
+              , compute(concs)
+              , load(absAddr,1)
+              , compute(i2s)
+              , compute(concs)
+              , loads(") = ")
+              , compute(concs)
+              , load(absAddr,0)
+              , load(absAddr,1)
+              , pushj(10)
+              , compute(i2s)
+              , compute(concs)
+              , svc(writeln)
+              , pop()
+              , undef()
+              , store(absAddr,0)
+              , undef()
+              , store(absAddr,1)
+              , compute(terminate)
+              , entry(3)
+              , store(locAddr,0)
+              , store(locAddr,1)
+              , dup()
+              , store(locAddr,2)
+              , load(locAddr,1)
+              , compute(eqi)
+              , branch(false,3)
+              , load(locAddr,2)
+              , jump(14)
+              , load(locAddr,2)
+              , load(locAddr,1)
+              , compute(gti)
+              , branch(false,7)
+              , load(locAddr,2)
+              , load(locAddr,1)
+              , compute(subi)
+              , load(locAddr,1)
+              , pushj(-18)
+              , jump(4)
+              , load(locAddr,1)
+              , load(locAddr,2)
+              , pushj(-22)
+              , load(locAddr,0)
+              , exit()
+              , popj()
+              }
+             , 2
+             );
+        }
+    }

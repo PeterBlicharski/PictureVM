@@ -1,0 +1,44 @@
+# $Id: INSTALL,v 1.9 2003/01/13 16:04:45 ii3839 Exp $
+############################################################################
+#                                                                          #
+#                   Virtuelle Machine zur Bildmanipulation                 #
+#                                                                          #
+#			      by Peter Blicharki (ii3839)                  #    
+#				 Malte Hopmann   (ii4127)                  #
+#                                                                          #
+#                                                                          #
+#           Entstanden als Projekt für das SoftwarePraktikum an der        #
+#           Fachhochschule Wedel.                                          #
+#                                                                          #
+#           Unter Leitung von Professor Schmidt.                           #
+#                                                                          #	
+#                                                           Januar 2003    #	
+############################################################################
+
+1. Wie wird es installiert
+---------------------------
+Um die Virtuelle Machine zu installieren bitte Makefile benutzten:
+
+> make install
+
+Compiliert die Virtuelle Machine für den Gebrauch.
+
+
+2. Wie wird es konfiguriert
+---------------------------
+Es werden keine Konfigurationsschritte benötigt. Einmal installiert,
+ist die Virtuelle Machine betriebsbereit.
+
+
+3. Wie werden Programme ausgeführt
+----------------------------------
+
+Zum Ausführen von Programmen:
+Das PPL-Programm in das Verzeichnis "ppl" kopieren.
+Es mit javac kompilieren.
+
+> javac ppl/"name des porgramms"
+
+Anschliesend die Virtuelle Machnine ausführen:
+
+> java PPL "name des Programms ohne .java" <mögliche Parameter>
